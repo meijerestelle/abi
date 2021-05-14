@@ -9,10 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        NavigationView {
-            Text("dit is de landing van de app")
-                .navigationTitle("Abi").navigationBarItems(trailing: Image(systemName: "info.circle"))
-        }
+        Text("dit is de landing van de app")
     }
 }
 
