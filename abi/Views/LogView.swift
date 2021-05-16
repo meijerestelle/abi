@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LogView: View {
     var body: some View {
-        Text("Hier kun je je activiteiten loggen")
+        Text("Hier kun je logentries kwijt, zodat je later kan terugblikken op je acties.")
     }
 }
 
