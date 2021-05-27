@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct CardComponent: View {
-    // Properties
-    var image: String
-    var title: String
-    var description: String
+    
+    @State private var isOn = false
+    
+    var activity: Activity
     
     var body: some View {
         HStack {
-            Image(image)
+            Image(activity.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 100)
@@ -24,19 +24,47 @@ struct CardComponent: View {
                 .padding(.trailing)
             
             VStack(alignment: .leading) {
-                Text(title)
-                    .font(.title2)
+                Text(activity.title)
+                    .font(.title3)
                     .fontWeight(.bold)
                 
-                Text(description)
-                    .lineLimit(4)
+                Text(activity.headline)
+                    .lineLimit(5)
             }
+            .frame(width: .infinity)
+            
+            Spacer()
+            
+            VStack() {
+                
+                    Toggle("Switch", isOn: $isOn)
+                        .toggleStyle(CheckToggleStyle())
+                
+                Spacer()
+            }
+            
         }
-        .frame(maxWidth: .infinity, alignment: .center)
+        .frame(maxWidth: .infinity, maxHeight: 150, alignment: .leading)
         .padding()
         .background(Color.white)
         .modifier(CardModifier())
         .padding([.horizontal, .bottom])
+    }
+}
+
+struct CheckToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button {
+            configuration.isOn.toggle()
+        } label: {
+            icon: do {
+                Image(systemName: configuration.isOn ? "heart.fill" : "heart")
+                    .foregroundColor(Color("Oranje"))
+                    .accessibility(label: Text(configuration.isOn ? "Checked" : "Unchecked"))
+                    .imageScale(.large)
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
@@ -51,10 +79,6 @@ struct CardModifier: ViewModifier {
 
 struct CardComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CardComponent(
-        image: "hiking",
-        title: "Activiteit",
-        description: "Hier komt een korte samenvatting van een activiteit."
-        )
+        CardComponent(activity: activitiesData[0])
     }
 }

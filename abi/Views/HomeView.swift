@@ -45,25 +45,14 @@ struct HomeView: View {
                     HStack {
                         Image(systemName: "sparkle")
                         
-                        Text("Activiteit suggesties")
+                        Text("Favorieten")
                             .font(.headline)
+                        
+                        Spacer()
                     }
                     .padding([.top, .leading, .trailing])
-                
-                    CardComponent(image: "hiking",
-                                  title: "Wandelen",
-                                  description: "Misschien heeft je buddy er behoefte aan om een stukje te wandelen."
-                    )
                     
-                    CardComponent(image: "dinner",
-                                  title: "Samen eten",
-                                  description: "Het avondeten is een moment van samenkomen en het praten over de dag."
-                    )
                     
-                    CardComponent(image: "conversation",
-                                  title: "In gesprek",
-                                  description: "Praten helpt. Het is alleen de kunst om het juiste onderwerp op het juiste moment te vinden."
-                    )
                 }
             }
             .navigationBarTitle("Welkom bij Abi")
