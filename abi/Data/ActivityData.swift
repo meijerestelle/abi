@@ -32,7 +32,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "samen",
-        image: "",
+        image: "hobby",
         title: "Een oude hobby",
         headline: "Houdt je samen bezig met een oude hobby.",
         description: "Vraag jouw vriend(in) eens naar een oude hobby en kijk of je dit samen kunt uitvoeren. Een veelvoorkomend symptoom van depressie is het geen energie meer krijgen van activiteiten waarbij dat vroeger wel het geval was. Help je vriend(in) om een oude hobby weer een keer te proberen of op te pakken.",
@@ -41,7 +41,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "samen",
-        image: "",
+        image: "docu",
         title: "Documentaire kijken",
         headline: "Kijk (samen of alleen) een documentaire over depressie.",
         description: "Een interessante manier om meer te weten te komen over depressies is het kijken van documentaires of video’s. Dat kun je alleen doen of met jouw vriend(in). Je laat aan hem of haar zien dat je probeert te begrijpen hoe hij of zij zich voelt. De documentaire of video kan ook een goed gespreksonderwerp zijn; vraag bijvoorbeeld of je vriend(in) zich herkent in wat er gezegd (of verteld) werd en waarom dat wel of niet zo is. Ga je samen kijken? Denk dan goed na over welke documentaire op dat moment geschikt is om te kijken. Is jouw vriend(in) erg gevoelig? Kijk dan bijvoorbeeld een animatie die op een simpele, luchtige manier uitlegt wat een depressie is en niet een documentaire over zelfdoding.",
@@ -50,7 +50,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "samen",
-        image: "",
+        image: "question",
         title: "Vraag om hulp",
         headline: "Vraag jouw vriend(in) om te helpen.",
         description: "Vraag jouw vriend(in) eens om hulp of advies en geef hem of haar het gevoel ertoe te doen en belangrijk te zijn. Vraag bijvoorbeeld hulp bij het bakken van een taart, uitleg over een game waar hij of zij alles van weet of een tip voor een goede snackbar. Het kan van alles zijn, maar let er wel op dat je niet te veel van jouw vriend(in) vraagt. Schat vooraf in wat haalbaar is.",
@@ -59,7 +59,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "samen",
-        image: "",
+        image: "cleaning",
         title: "Huishouden",
         headline: "Help mee met een (kleine) huishoudelijke taak.",
         description: "Simpele huishoudelijke taken kunnen veel energie vragen van iemand met een depressie, maar juist in een opgeruimd huis kan zorgen voor meer ruimte in je hoofd. Wanneer je merkt dat jouw vriend(in) bijvoorbeeld al een tijdje de afwas niet heeft gedaan, kun je voorstellen om hem of haar daarmee te helpen. De eerste reactie zal dan waarschijnlijk zijn dat het niet nodig is, bijvoorbeeld omdat ze het later zelf wel doen, maar vaak gebeurt dat niet. Vraag het nog eens of begin er gewoon zelf mee. Dat kan jouw vriend(in) ook overhalen om mee te helpen. Hij of zij zal je er dankbaar voor zijn. Is jouw vriend(in) van nature al rommelig? Dan kan het zijn dat hij of zij het juist fijn vindt wanneer het huis niet helemaal opgeruimd is. Toon hier begrip voor.",
@@ -68,7 +68,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "samen",
-        image: "",
+        image: "declutter",
         title: "Opruimen",
         headline: "Stel voor om te helpen met opruimen.",
         description: "Heeft jouw vriend(in) al een tijdje een grote rommel in zijn/haar huis? Stel dan eens voor om mee te helpen met opruimen. Een opgeruimd huis kan ervoor zorgen dat er ook meer rust en ruimte komt in het hoofd van je vriend(in), waardoor hij of zij zich makkelijker kan ontspannen. Ga er wel van uit dat de ander zal aangeven dat het niet nodig is, stel het dan een tijdje later nog een keer voor. Of maak een keer een afspraak om in de toekomst samen een deel van het huis op te ruimen, dan geeft je de ander ruimte om erover na te denken en hoeft hij/zij niet meteen in beweging te komen.",
@@ -78,7 +78,7 @@ let activitiesData: [Activity] = [
     // MARK: - Alleen categorie
     Activity(
         tag: "alleen",
-        image: "",
+        image: "story",
         title: "Ervaringsverhalen",
         headline: "Lees ervaringsverhalen over depressie.",
         description: "Om te weten te komen hoe het is over depressie kan het nuttig zijn om ervaringsverhalen van mensen die een depressie hebben gehad te lezen. Hoe hebben zij het ervaren en hoe was het voor de omgeving? Op mindblue.nl vind je verschillende ervaringsverhalen en video’s over het hebben van een depressie.",
@@ -87,7 +87,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "alleen",
-        image: "",
+        image: "reading",
         title: "Lees een roman",
         headline: "Lees een boek over depressie.",
         description: "Hou je van lezen? Dan kan het lezen van een roman over depressies een goede manier zijn om meer over het onderwerp te weten te komen. Paaz, de roman van Myrthe van der Meer, geeft bijvoorbeeld een goed beeld van een depressie. Je kunt natuurlijk ook aan jouw vriend(in) vragen of ze een boek over depressie heeft gelezen waarin hij of zij zich herkent.",
@@ -96,7 +96,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "alleen",
-        image: "",
+        image: "info",
         title: "Lees informatie",
         headline: "Vergroot je kennis over depressie.",
         description: "Informatie over depressie is niet moeilijk te vinden. Op internet kun je er veel over lezen. Over de symptomen, maar ook over hoe de omgeving van iemand met een depressie het beste met hem of haar kan omgaan. Een aanrader voor een goede website over depressie is er een van de Rijksoverheid. Wanneer je enige kennis hebt over depressie, wordt het makkelijker om je in te leven in je vriend(in) en om hem of haar te helpen.",
@@ -105,7 +105,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "alleen",
-        image: "",
+        image: "help",
         title: "Maak je je echt zorgen?",
         headline: "Dit kan je doen bij een vermoeden van suïcidale gedachten.",
         description: "Maak je je ernstig zorgen over jouw vriend(in) en heb je het gevoel dat hij of zij denkt aan zelfdoding? Dan kun je altijd terecht bij 113 Zelfmoordpreventie, door te bellen naar 0900-0113 of te kijken op deze website.",
