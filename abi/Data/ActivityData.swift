@@ -18,7 +18,7 @@ let activitiesData: [Activity] = [
         title: "Autorit",
         headline: "Maak samen een ritje in de auto",
         description: "Samen een autoritje maken is een goede manier om jouw vriend(in) weer eens mee naar buiten te nemen. Probeer aan te voelen waar de ander op dat moment behoefte aan heeft. Is het afleiding? Dan kun je bijvoorbeeld de radio aanzetten. Soms kan een autoritje ook zorgen voor een goed gesprek, luister dan vooral en wees niet bang voor stiltes.",
-        isFavorite: false
+        isFavorite: true
     ),
     
     Activity(
@@ -114,7 +114,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "alleen",
-        image: "",
+        image: "rest",
         title: "Tijd voor jezelf",
         headline: "Plan bewust tijd voor jezelf in.",
         description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
@@ -125,7 +125,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "communicatie",
-        image: "",
+        image: "inspiration",
         title: "Inspiratie",
         headline: "Stuur een inspirerende quote",
         description: "Je hebt het vast wel eens gehad: je leest een boek of kijkt een film en opeens wordt er iets gezegd wat écht bij je binnenkomt. Iets wat je inspireert of blij maakt. Sla die uitspraak of zin eens op en stuur hem naar jouw vriend(in) op een moment dat hij of zij wel een moodbooster kan gebruiken. Misschien zorgt die ene zin wel net voor een beetje motivatie en energie die jouw vriend(in) nodig had om toch te beginnen aan de afwas of om toch even te gaan wandelen.",
@@ -134,8 +134,8 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "communicatie",
-        image: "",
-        title: "Weer er voor een ander",
+        image: "support",
+        title: "Wees er voor een ander",
         headline: "Wees er voor de ander en maak dit zichtbaar",
         description: "Iemand met een depressie heeft vaak het idee er alleen voor te staan. Laat zien dat hij of zij niet alleen is en dat je er graag voor hem of haar wilt zijn. Dit kun je bijvoorbeeld laten zien door een kaartje of en klein cadeautje te geven maar, je kunt het natuurlijk ook gewoon tegen je vriend(in) zeggen. Laat ook weten dat de ander mag bellen of een berichtje mag sturen wanneer er iets is.",
         isFavorite: false
@@ -143,7 +143,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "communicatie",
-        image: "",
+        image: "ask",
         title: "Codetaal",
         headline: "Bedenk jullie eigen codewoorden.",
         description: "Bedenk samen met jouw vriend/vriendin een eigen codetaal voor gevoelens. Denk hierbij bijvoorbeeld aan kleuren of emoji. Door samen een simpele codetaal te creëren hoeft jouw vriend(in) niet steeds opnieuw uit te leggen wat er aan de hand is én jij weer hoe het met hem of haar gaat. Je kunt ook afspreken om bepaalde activiteiten te koppelen aan een codewoord. Stel bijvoorbeeld voor om op een ‘rode’ dag even met elkaar te bellen of langs te komen voor een kopje thee. Een voorbeeld voor een codetaal is: Groen: het gaat goed vandaag. Oranje: het gaat redelijk goed vandaag. Rood: het gaat niet goed vandaag.",
@@ -152,7 +152,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "commmunicatie",
-        image: "",
+        image: "moodboard",
         title: "Moodboard",
         headline: "Maak een inspirerend moodboard.",
         description: "Maak samen een moodboard over inspiratie. Dit is een poster die maakt van bij elkaar verzamelde afbeeldingen of knipsel. Zoek bijvoorbeeld eens op Pinterest of Google voor inspiratie. Je kunt afbeeldingen gebruiken uit oude tijdschriften of online zoeken en uitprinten. Maak samen een moodboard over wat jullie inspireert. Zien jullie hierin ook overeenkomsten en verschillen? Door samen zo’n project uit te voeren zorg je voor een sterkere band omdat jullie moeten samenwerken en overleggen. Ondertussen leer je jouw vriend(in) langzaam weer wat beter kennen.",
@@ -161,7 +161,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "communicatie",
-        image: "",
+        image: "creative",
         title: "Creatief",
         headline: "Doe samen iets creatiefs.",
         description: "Voor sommige mensen is het lastig om zich te uiten in woorden. Voor hen kan het makkelijker zijn om gevoelens en gedachten op papier te zetten door middel van kleuren en vormen. Het op deze manier in beeld brengen van gevoelens wordt ook wel intuïtief schilderen/tekenen genoemd. Het is belangrijk dat je niet nadenkt over het eindresultaat, maar over wat je op dat moment voelt en welke kleur of vorm daarbij past. Probeer dit eens samen uit en praat over het eindresultaat.",
@@ -170,7 +170,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "communicatie",
-        image: "",
+        image: "question",
         title: "Vraag",
         headline: "Vraag wat je kunt doen.",
         description: "Vraag aan de ander wat je kan doen. Verwacht niet een duidelijk en helder antwoord, jouw vriend(in) weet het waarschijnlijk ook niet. Maar: doordat je deze vraag stelt, laat je zien dat je wilt helpen. Je kunt ook een iets specifiekere vraag stellen, bijvoorbeeld: Vind je het fijn als ik je help bij het huishouden? Vind je het fijn als ik je blijf vragen om mee te gaan sporten? Waar heb je moeite mee en hoe zou ik je daarbij kunnen helpen?",
@@ -179,7 +179,7 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "communicatie",
-        image: "",
+        image: "tell",
         title: "Vertel",
         headline: "Praat af en toe ook over je eigen problemen.",
         description: "Zorg ervoor dat het een vriendschap blijft waarin jullie gelijkwaardig zijn. Praat daarom ook over waar jij zelf tegenaan loopt of mee zit. Houd er rekening mee dat jouw vriend(in) misschien niet in staat is om je te helpen of om echt goed te luisteren. Maar door toch over jouw leven te blijven vertellen, zorg je ervoor dat jouw vriend(in) zich niet voelt buitengesloten en geef je hem of haar het gevoel dat ze er nog steeds toe doen. Maar: doe dit niet te vaak. Wanneer je écht met iemand moet praten over iets waar je mee zit, dan kun je beter kiezen voor een gesprekspartner die jou (waarschijnlijk) beter kan helpen.",
@@ -190,55 +190,55 @@ let activitiesData: [Activity] = [
     
     Activity(
         tag: "afleiding",
-        image: "",
+        image: "excercise",
         title: "Zorg voor beweging",
-        headline: "",
-        description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
+        headline: "Ga samen beweging.",
+        description: "Op veel mensen met depressieve klachten heeft fysieke inspanning een positief effect. Nodig je vriend(in) eens uit om samen te sporten of te gaan hardlopen. Wanneer dit te veel is voor de ander, kun je bijvoorbeeld ook een korte wandeling maken of een keer een balletje trappen op het veldje in de buurt. Lees hier meer over het effect dat beweging heeft op mensen met een depressie.",
         isFavorite: false
         ),
     
     Activity(
         tag: "afleiding",
-        image: "",
+        image: "yoga",
         title: "Yoga",
-        headline: "",
-        description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
+        headline: "Doe samen yoga oefeningen.",
+        description: "Een goede manier om wat meer ontspanning en beweging te krijgen is yoga. Het fijne aan yoga is dat je het ook gewoon thuis kunt doen. Daarnaast zorgt yoga voor een betere ademhaling en voor meer energie: iets wat iemand met een depressie vaak niet meer heeft. Zoek samen (of alleen, ter voorbereiding) naar geschikte yoga oefeningen of kijk op deze site over yoga bij depressie. Verwacht geen wonderen, jouw vriend(in) zal niet ineens staan te springen van de energie, maar beweging is altijd goed voor geest en lichaam.",
         isFavorite: false
         ),
     
     Activity(
         tag: "afleiding",
-        image: "",
+        image: "together",
         title: "Vroeger",
-        headline: "",
-        description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
+        headline: "Doe een activiteit waar je vriend(in) vroeger energie van kreeg.",
+        description: "Mensen met een depressie hebben vaak geen zin meer in de dingen waar zij, vóór de depressie, energie van kregen. Waarschijnlijk ook de dingen die jullie samen deden. Gingen jullie bijvoorbeeld één keer per week sporten of probeerden jullie iedere maand een nieuw recept uit? Wat het ook was: probeer het weer op te pakken, maar zorg ervoor dat je niet gaat pushen. Het is belangrijk dat iemand met een depressie weer zo gaat leven zoals hij/zij voorheen deed, uiteindelijk zorgt dit ervoor dat die energie vanzelf weer terug gaat komen. Dit kan echter even duren dus blijf voorzichtig hiermee, push niet teveel maar zorg wel voor de mogelijkheid om oude activiteiten opnieuw op te pakken.",
         isFavorite: false
         ),
     
     Activity(
         tag: "afleiding",
-        image: "",
+        image: "coffee",
         title: "Bakkie doen",
-        headline: "",
-        description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
+        headline: "Drink samen een kop koffie of thee.",
+        description: "Voor iemand die niet lekker in zijn vel zit kan een simpele activiteit als koffie/thee drinken al goed zijn om te doen. Het zorgt voor afleiding en laat zien dat hij of zij er niet alleen voor staat. Maar ook zeker bij iemand met een zware depressie is dit een goede activiteit om te doen. Geef dan bijvoorbeeld één of twee dagen van tevoren aan rond een bepaalde tijd langs te komen. Dan heeft je vriend/vriendin een reden om zich aan te kleden, en misschien zelfs even het huis op te ruimen. Wanneer je dit wekelijks of vaker doet zal dit zorgen voor regelmaat, iets wat erg belangrijk is voor iemand met een depressie. Ook op mindblue.nl kan je teruglezen dat regelmaat erg belangrijk is voor iemand met een depressie. ",
         isFavorite: false
         ),
     
     Activity(
         tag: "afleiding",
-        image: "",
+        image: "memories",
         title: "Herinneringen",
-        headline: "",
-        description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
+        headline: "Praat over mooie herinneringen.",
+        description: "Voor iemand met een depressie kan het moeilijk zijn om zich te herinneren hoe het leven was voordat de nare en negatieve gevoelens er waren. Probeer daarom jouw vriend(in) hierbij te helpen en praat over goede herinneringen die jullie hebben aan de tijd voor de depressie. Hiermee laat je jouw vriend(in) zien dat het niet altijd zo was als tijdens de depressie",
         isFavorite: false
         ),
     
     Activity(
         tag: "afleiding",
-        image: "",
+        image: "old pictures",
         title: "Oude foto's",
-        headline: "",
-        description: "Wanneer iemand die dichtbij jou staat last heeft van depressies, maar ook wanneer je gevoelig bent voor stemmingen van anderen, is het belangrijk dat je ook tijd voor jezelf neemt zodat je kunt ontspannen. Plan dus eens in de zoveel tijd een moment in voor jezelf. Ga iets doen waarvan jij ontspant, want pas als jij je weer beter in je vel zit kun je jouw vriend(in) goed helpen.",
+        headline: "Stuur een oude foto.",
+        description: "Herinner jouw vriend(in) aan een leuke gebeurtenis door een oude foto te sturen. Breng hem of haar weer even terug naar de tijd voor de depressie en laat zien dat het niet altijd slecht ging. Misschien help je jouw vriend(in) daarmee ook weer wat positiever te denken en wat meer vertrouwen te kijken in het feit dat de depressie weer over zal gaan.",
         isFavorite: false
         )
 ]

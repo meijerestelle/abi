@@ -9,8 +9,6 @@ import SwiftUI
 
 struct CardComponent: View {
     
-    @State private var isOn = false
-    
     var activity: Activity
     
     var body: some View {
@@ -37,9 +35,6 @@ struct CardComponent: View {
             
             VStack() {
                 
-                    Toggle("Switch", isOn: $isOn)
-                        .toggleStyle(CheckToggleStyle())
-                
                 Spacer()
             }
             
@@ -49,22 +44,6 @@ struct CardComponent: View {
         .background(Color.white)
         .modifier(CardModifier())
         .padding([.horizontal, .bottom])
-    }
-}
-
-struct CheckToggleStyle: ToggleStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        Button {
-            configuration.isOn.toggle()
-        } label: {
-            icon: do {
-                Image(systemName: configuration.isOn ? "heart.fill" : "heart")
-                    .foregroundColor(Color("Oranje"))
-                    .accessibility(label: Text(configuration.isOn ? "Checked" : "Unchecked"))
-                    .imageScale(.large)
-            }
-        }
-        .buttonStyle(PlainButtonStyle())
     }
 }
 

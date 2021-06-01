@@ -10,23 +10,12 @@ import SwiftUI
 struct HomeView: View {
     @State var stoplicht: Bool = true
     
+    let activities: [Activity] = activitiesData
+    var randomElement = activitiesData.randomElement()
+    
     var body: some View {
         NavigationView {
             ScrollView {
-    //            VStack(alignment: .leading) {
-    //                Text("Hi, Estèlle" .uppercased())
-    //                HStack {
-    //
-    //                    Text("Welkom bij Abi")
-    //                        .font(.largeTitle)
-    //                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-    //
-    //                    Spacer()
-    //                }
-    //            }
-    //            .padding(.horizontal)
-    //            .edgesIgnoringSafeArea(.all)
-                
                 HStack {
                     Image(systemName: "questionmark.circle")
                     
@@ -45,13 +34,12 @@ struct HomeView: View {
                     HStack {
                         Image(systemName: "sparkle")
                         
-                        Text("Favorieten")
+                        Text("Uitgelicht")
                             .font(.headline)
                         
                         Spacer()
                     }
                     .padding([.top, .leading, .trailing])
-                    
                     
                 }
             }

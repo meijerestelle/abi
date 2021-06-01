@@ -19,4 +19,22 @@ struct Activity: Identifiable {
     var isFavorite:Bool
 }
 
-
+class Activities: ObservableObject {
+    @Published var allActivities: [Activity] = activitiesData
+    
+    @Published var favorites: [Activity]
+    static let standard = Activities()
+    private init() {
+        favorites = activitiesData.filter(\.isFavorite)
+        print(favorites.count)
+    }
+    
+    func setFavorite(value: Bool, forActivity: Activity) {
+        var item = allActivities.first { current in
+            current.id == forActivity.id
+        }
+        
+        item?.isFavorite = value
+        favorites = activitiesData.filter(\.isFavorite)
+    }
+}

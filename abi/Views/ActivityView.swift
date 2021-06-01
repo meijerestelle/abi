@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ActivityView: View {
     
+    @State private var isOn = false
+    
     var activity: Activity
     
     var body: some View {
@@ -28,12 +30,34 @@ struct ActivityView: View {
                 Text(activity.description)
                 
                 Spacer()
+                
+                Toggle("Switch", isOn: $isOn)
+                    .toggleStyle(CheckToggleStyle())
+                    .onChange(of: isOn, perform: { value in
+                        Activities.standard.setFavorite(value: value, forActivity: activity)
+                    })
             }
             .padding(.horizontal)
             .frame(idealWidth: .infinity, alignment: .leading)
         }
         .navigationTitle(activity.title)
         .navigationBarTitleDisplayMode(.automatic)
+    }
+}
+
+struct CheckToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button {
+            configuration.isOn.toggle()
+        } label: {
+            icon: do {
+                Image(systemName: configuration.isOn ? "heart.fill" : "heart")
+                    .foregroundColor(Color("Oranje"))
+                    .accessibility(label: Text(configuration.isOn ? "Checked" : "Unchecked"))
+                    .imageScale(.large)
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 

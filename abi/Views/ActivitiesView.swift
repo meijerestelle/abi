@@ -11,7 +11,7 @@ struct ActivitiesView: View {
     
     @State private var goToNewView: Bool = false
     
-    var activities: [Activity] = activitiesData
+    @ObservedObject var activities = Activities.standard
     
     var body: some View {
         NavigationView {
@@ -29,15 +29,15 @@ struct ActivitiesView: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Image(systemName: "sparkles")
-                    Text("Suggesties")
+                    Image(systemName: "heart.fill")
+                    Text("Favorieten")
                         .fontWeight(.bold)
                     Spacer()
                 }
                 .font(.title2)
                 .padding(.horizontal)
                 
-                ForEach(activities[0...10]) { item in
+                ForEach(activities.favorites) { item in
                     NavigationLink(destination: ActivityView(activity: item)) {
                         CardComponent(activity: item)
                     }
