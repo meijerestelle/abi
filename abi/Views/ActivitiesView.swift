@@ -21,7 +21,7 @@ struct ActivitiesView: View {
                     FilterCard(filterImage: "person.fill", filterTitle: "Alleen")
                 }
                 .padding(.horizontal)
-                
+
                 HStack {
                     FilterCard(filterImage: "cloud.sun.fill", filterTitle: "Buiten")
                     FilterCard(filterImage: "bubble.left.and.bubble.right.fill", filterTitle: "Communicatie")
@@ -38,6 +38,24 @@ struct ActivitiesView: View {
                 .padding(.horizontal)
                 
                 ForEach(activities.favorites) { item in
+                    NavigationLink(destination: ActivityView(activity: item)) {
+                        CardComponent(activity: item)
+                    }
+                    .foregroundColor(.black)
+                 }
+                
+                Divider()
+                
+                HStack {
+                    Image(systemName: "list.bullet")
+                    Text("Alle activiteiten")
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .font(.title2)
+                .padding(.horizontal)
+                
+                ForEach(activities.allActivities) { item in
                     NavigationLink(destination: ActivityView(activity: item)) {
                         CardComponent(activity: item)
                     }

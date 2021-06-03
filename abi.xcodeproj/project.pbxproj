@@ -20,6 +20,8 @@
 		85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD92265E723B00BE80C5 /* ActivityModel.swift */; };
 		85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD95265E72F200BE80C5 /* ActivityData.swift */; };
 		85AFBD98265E757000BE80C5 /* FilterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD97265E757000BE80C5 /* FilterCard.swift */; };
+		85CFAF282666520B00BE8902 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CFAF272666520B00BE8902 /* LogData.swift */; };
+		85CFAF2A2666531500BE8902 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CFAF292666531500BE8902 /* LogModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		85AFBD92265E723B00BE80C5 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		85AFBD95265E72F200BE80C5 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		85AFBD97265E757000BE80C5 /* FilterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCard.swift; sourceTree = "<group>"; };
+		85CFAF272666520B00BE8902 /* LogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
+		85CFAF292666531500BE8902 /* LogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 			children = (
 				85041DF5264EA3A000E6F4B8 /* HomeView.swift */,
 				85041DF3264E9EDC00E6F4B8 /* ActivitiesView.swift */,
-				85041DF7264EA3AE00E6F4B8 /* LogView.swift */,
 				85817B7D265E94A1003F1689 /* ActivityView.swift */,
+				85041DF7264EA3AE00E6F4B8 /* LogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				85AFBD92265E723B00BE80C5 /* ActivityModel.swift */,
+				85CFAF292666531500BE8902 /* LogModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				85AFBD95265E72F200BE80C5 /* ActivityData.swift */,
+				85CFAF272666520B00BE8902 /* LogData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CFAF282666520B00BE8902 /* LogData.swift in Sources */,
 				8519ECF426513C48002E7F38 /* CardComponent.swift in Sources */,
 				8519ECF6265148D6002E7F38 /* CheckinComponent.swift in Sources */,
 				85817B7E265E94A1003F1689 /* ActivityView.swift in Sources */,
@@ -208,6 +215,7 @@
 				85041DF4264E9EDC00E6F4B8 /* ActivitiesView.swift in Sources */,
 				85041DF8264EA3AE00E6F4B8 /* LogView.swift in Sources */,
 				851C37B9264E965600F05116 /* abiApp.swift in Sources */,
+				85CFAF2A2666531500BE8902 /* LogModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

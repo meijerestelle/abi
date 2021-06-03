@@ -34,7 +34,7 @@ struct ActivityView: View {
                 Toggle("Switch", isOn: $isOn)
                     .toggleStyle(CheckToggleStyle())
                     .onChange(of: isOn, perform: { value in
-                        Activities.standard.setFavorite(value: value, forActivity: activity)
+                        Activities.standard.setFavorite(isFavourite: value, forActivity: activity)
                     })
             }
             .padding(.horizontal)
@@ -42,6 +42,9 @@ struct ActivityView: View {
         }
         .navigationTitle(activity.title)
         .navigationBarTitleDisplayMode(.automatic)
+        .onAppear(){
+            isOn = Activities.standard.isFavourited(activity: activity)
+        }
     }
 }
 
