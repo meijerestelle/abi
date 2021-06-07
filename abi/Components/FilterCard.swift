@@ -19,7 +19,7 @@ struct FilterCard: View {
             Text(filterTitle)
         }
         .foregroundColor(.white)
-        .frame(maxWidth: .infinity, maxHeight: 80, alignment: .center)
+        .frame(maxWidth: .infinity, maxHeight: 60, alignment: .center)
         .padding()
         .background(Color.accentColor)
         .modifier(CardModifier())

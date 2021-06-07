@@ -17,14 +17,24 @@ struct ActivitiesView: View {
         NavigationView {
             ScrollView {
                 HStack {
-                    FilterCard(filterImage: "person.2.fill", filterTitle: "Samen")
-                    FilterCard(filterImage: "person.fill", filterTitle: "Alleen")
+                    NavigationLink(destination: SamenActiviteiten()) {
+                        FilterCard(filterImage: "person.2.fill", filterTitle: "Samen")
+                    }
+                    NavigationLink(
+                        destination: AlleenActiviteiten(),
+                        label: {
+                            FilterCard(filterImage: "person.fill", filterTitle: "Alleen")
+                        })
                 }
                 .padding(.horizontal)
 
                 HStack {
-                    FilterCard(filterImage: "cloud.sun.fill", filterTitle: "Buiten")
-                    FilterCard(filterImage: "bubble.left.and.bubble.right.fill", filterTitle: "Communicatie")
+                    NavigationLink(destination: AfleidingActiviteiten()) {
+                        FilterCard(filterImage: "cloud.sun.fill", filterTitle: "Buiten")
+                    }
+                    NavigationLink(destination: CommunicatieActiviteiten()) {
+                        FilterCard(filterImage: "bubble.left.and.bubble.right.fill", filterTitle: "Communicatie")
+                    }
                 }
                 .padding(.horizontal)
                 
@@ -37,6 +47,15 @@ struct ActivitiesView: View {
                 .font(.title2)
                 .padding(.horizontal)
                 
+                if (activities.favorites.isEmpty == true) {
+                    HStack {
+                        Text("Je hebt nog geen favorieten!")
+                        
+                        Spacer()
+                    }
+                    .padding([.horizontal])
+                }
+                
                 ForEach(activities.favorites) { item in
                     NavigationLink(destination: ActivityView(activity: item)) {
                         CardComponent(activity: item)
@@ -44,25 +63,23 @@ struct ActivitiesView: View {
                     .foregroundColor(.black)
                  }
                 
-                Divider()
-                
-                HStack {
-                    Image(systemName: "list.bullet")
-                    Text("Alle activiteiten")
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                .font(.title2)
-                .padding(.horizontal)
-                
-                ForEach(activities.allActivities) { item in
-                    NavigationLink(destination: ActivityView(activity: item)) {
-                        CardComponent(activity: item)
-                    }
-                    .foregroundColor(.black)
-                 }
+//                HStack {
+//                    Image(systemName: "list.bullet")
+//                    Text("Alle activiteiten")
+//                        .fontWeight(.bold)
+//                    Spacer()
+//                }
+//                .font(.title2)
+//                .padding(.horizontal)
+//
+//                ForEach(activities.allActivities[0...9]) { item in
+//                    NavigationLink(destination: ActivityView(activity: item)) {
+//                        CardComponent(activity: item)
+//                    }
+//                    .foregroundColor(.black)
+//                 }
             }
-            .navigationBarTitle("Activiteiten")
+            .navigationBarTitle("Activiteiten", displayMode: .automatic)
         }
     }
 }

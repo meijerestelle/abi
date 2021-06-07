@@ -20,6 +20,13 @@
 		85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD92265E723B00BE80C5 /* ActivityModel.swift */; };
 		85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD95265E72F200BE80C5 /* ActivityData.swift */; };
 		85AFBD98265E757000BE80C5 /* FilterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD97265E757000BE80C5 /* FilterCard.swift */; };
+		85C2819C266E21CB007F7431 /* LinkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2819B266E21CB007F7431 /* LinkCard.swift */; };
+		85C281A0266E2B62007F7431 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2819F266E2B62007F7431 /* InfoView.swift */; };
+		85C281A2266E30CA007F7431 /* SamenActiviteiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C281A1266E30CA007F7431 /* SamenActiviteiten.swift */; };
+		85C281A4266E3E55007F7431 /* MethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C281A3266E3E55007F7431 /* MethodsView.swift */; };
+		85C281A7266E4119007F7431 /* AlleenActiviteiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C281A6266E4119007F7431 /* AlleenActiviteiten.swift */; };
+		85C281A9266E47C5007F7431 /* AfleidingActiviteiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C281A8266E47C5007F7431 /* AfleidingActiviteiten.swift */; };
+		85C281AB266E49F9007F7431 /* CommunicatieActiviteiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C281AA266E49F9007F7431 /* CommunicatieActiviteiten.swift */; };
 		85CFAF282666520B00BE8902 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CFAF272666520B00BE8902 /* LogData.swift */; };
 		85CFAF2A2666531500BE8902 /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CFAF292666531500BE8902 /* LogModel.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +47,13 @@
 		85AFBD92265E723B00BE80C5 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		85AFBD95265E72F200BE80C5 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		85AFBD97265E757000BE80C5 /* FilterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCard.swift; sourceTree = "<group>"; };
+		85C2819B266E21CB007F7431 /* LinkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCard.swift; sourceTree = "<group>"; };
+		85C2819F266E2B62007F7431 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		85C281A1266E30CA007F7431 /* SamenActiviteiten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamenActiviteiten.swift; sourceTree = "<group>"; };
+		85C281A3266E3E55007F7431 /* MethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsView.swift; sourceTree = "<group>"; };
+		85C281A6266E4119007F7431 /* AlleenActiviteiten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleenActiviteiten.swift; sourceTree = "<group>"; };
+		85C281A8266E47C5007F7431 /* AfleidingActiviteiten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfleidingActiviteiten.swift; sourceTree = "<group>"; };
+		85C281AA266E49F9007F7431 /* CommunicatieActiviteiten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicatieActiviteiten.swift; sourceTree = "<group>"; };
 		85CFAF272666520B00BE8902 /* LogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
 		85CFAF292666531500BE8902 /* LogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +75,9 @@
 				85041DF5264EA3A000E6F4B8 /* HomeView.swift */,
 				85041DF3264E9EDC00E6F4B8 /* ActivitiesView.swift */,
 				85817B7D265E94A1003F1689 /* ActivityView.swift */,
+				85C281A3266E3E55007F7431 /* MethodsView.swift */,
 				85041DF7264EA3AE00E6F4B8 /* LogView.swift */,
+				85C2819F266E2B62007F7431 /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -72,6 +88,7 @@
 				8519ECF326513C48002E7F38 /* CardComponent.swift */,
 				8519ECF5265148D6002E7F38 /* CheckinComponent.swift */,
 				85AFBD97265E757000BE80C5 /* FilterCard.swift */,
+				85C2819B266E21CB007F7431 /* LinkCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -98,6 +115,7 @@
 				851C37B8264E965600F05116 /* abiApp.swift */,
 				851C37BA264E965600F05116 /* ContentView.swift */,
 				85041DF2264E9EC700E6F4B8 /* Views */,
+				85C281A5266E40F4007F7431 /* Activiteiten Categorieën */,
 				8519ECF226513B42002E7F38 /* Components */,
 				85AFBD91265E722700BE80C5 /* Model */,
 				85AFBD94265E72E600BE80C5 /* Data */,
@@ -132,6 +150,18 @@
 				85CFAF272666520B00BE8902 /* LogData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		85C281A5266E40F4007F7431 /* Activiteiten Categorieën */ = {
+			isa = PBXGroup;
+			children = (
+				85C281A1266E30CA007F7431 /* SamenActiviteiten.swift */,
+				85C281A6266E4119007F7431 /* AlleenActiviteiten.swift */,
+				85C281A8266E47C5007F7431 /* AfleidingActiviteiten.swift */,
+				85C281AA266E49F9007F7431 /* CommunicatieActiviteiten.swift */,
+			);
+			name = "Activiteiten Categorieën";
+			path = "Activiteiten Categorieën";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,12 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C281AB266E49F9007F7431 /* CommunicatieActiviteiten.swift in Sources */,
 				85CFAF282666520B00BE8902 /* LogData.swift in Sources */,
 				8519ECF426513C48002E7F38 /* CardComponent.swift in Sources */,
 				8519ECF6265148D6002E7F38 /* CheckinComponent.swift in Sources */,
 				85817B7E265E94A1003F1689 /* ActivityView.swift in Sources */,
 				85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */,
+				85C281A9266E47C5007F7431 /* AfleidingActiviteiten.swift in Sources */,
 				85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */,
+				85C281A4266E3E55007F7431 /* MethodsView.swift in Sources */,
 				85AFBD98265E757000BE80C5 /* FilterCard.swift in Sources */,
 				851C37BB264E965600F05116 /* ContentView.swift in Sources */,
 				85041DF6264EA3A000E6F4B8 /* HomeView.swift in Sources */,
@@ -216,6 +249,10 @@
 				85041DF8264EA3AE00E6F4B8 /* LogView.swift in Sources */,
 				851C37B9264E965600F05116 /* abiApp.swift in Sources */,
 				85CFAF2A2666531500BE8902 /* LogModel.swift in Sources */,
+				85C281A0266E2B62007F7431 /* InfoView.swift in Sources */,
+				85C281A7266E4119007F7431 /* AlleenActiviteiten.swift in Sources */,
+				85C2819C266E21CB007F7431 /* LinkCard.swift in Sources */,
+				85C281A2266E30CA007F7431 /* SamenActiviteiten.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

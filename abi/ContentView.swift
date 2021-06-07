@@ -23,9 +23,15 @@ struct ContentView: View {
                     Text("Activiteiten")
                 }
             
+            MethodsView()
+                .tabItem {
+                    Image(systemName: "books.vertical.fill")
+                    Text("Methodes")
+                }
+            
             LogView()
                 .tabItem {
-                    Image(systemName: "book.closed.fill")
+                    Image(systemName: "doc.append.fill")
                     Text("Logboek")
                 }
         }
