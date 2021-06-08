@@ -23,19 +23,38 @@ struct ActivityView: View {
                 .clipped()
             
             VStack(alignment: .leading) {
-                Text(activity.headline)
-                    .font(.headline)
-                    .padding(.bottom)
+                HStack {
+                    Text(activity.headline)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                    
+                    Toggle("Switch", isOn: $isOn)
+                        .toggleStyle(CheckToggleStyle())
+                        .onChange(of: isOn, perform: { value in
+                            Activities.standard.setFavorite(isFavourite: value, forActivity: activity)
+                        })
+                }
+                .padding(.vertical)
                 
                 Text(activity.description)
                 
                 Spacer()
                 
-                Toggle("Switch", isOn: $isOn)
-                    .toggleStyle(CheckToggleStyle())
-                    .onChange(of: isOn, perform: { value in
-                        Activities.standard.setFavorite(isFavourite: value, forActivity: activity)
-                    })
+                Button(
+                    action: {
+                    print("logboek")
+                }, label: {
+                    Text("Voeg toe aan logboek")
+                        .multilineTextAlignment(.center)
+                })
+                    .frame(minWidth: 300, maxWidth: .infinity)
+                    .padding()
+                    .background(Color.accentColor)
+                    .foregroundColor(.white)
+                    .modifier(CardModifier())
+                    .padding(.top, 50)
             }
             .padding(.horizontal)
             .frame(idealWidth: .infinity, alignment: .leading)

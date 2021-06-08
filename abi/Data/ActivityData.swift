@@ -241,5 +241,34 @@ let activitiesData: [Activity] = [
         title: "Oude foto's",
         headline: "Stuur een oude foto.",
         description: "Herinner jouw vriend(in) aan een leuke gebeurtenis door een oude foto te sturen. Breng hem of haar weer even terug naar de tijd voor de depressie en laat zien dat het niet altijd slecht ging. Misschien help je jouw vriend(in) daarmee ook weer wat positiever te denken en wat meer vertrouwen te kijken in het feit dat de depressie weer over zal gaan."
-        )
+        ),
+    
+    // MARK: - Methodes
+
+    Activity(
+        id: 26,
+        tag: "methodes",
+        image: "",
+        title: "Signaleringsplan",
+        headline: "Dit zijn werkvormen die je kunt gebruiken om bij te houden hoe het gaat met je buddy.",
+        description: "Deze methode kan je alleen of samen met iemand met depressie doen. Het doel is om via een vooraf opgesteld plan snel te signaleren of het iets minder gaat. Dit kan ook zeker voor jezelf zijn, zodat je weet dat je het even wat rustiger aan moet gaan doen."
+    ),
+    
+    Activity(
+        id: 27,
+        tag: "methodes",
+        image: "",
+        title: "Mindfulness",
+        headline: "Mindfulness is een methode om aandachtig met de situatie die nu aan de gang is om te gaan.",
+        description: ""
+    ),
+    
+    Activity(
+        id: 28,
+        tag: "methodes",
+        image: "",
+        title: "Mindset",
+        headline: "Met de juiste mindset kun je een hoop overkomen.",
+        description: ""
+    ),
 ]

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8503FD48266F6CE000C8D98C /* MethodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD47266F6CE000C8D98C /* MethodCard.swift */; };
+		8503FD4A266F6D6F00C8D98C /* SignaleringsplanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD49266F6D6F00C8D98C /* SignaleringsplanView.swift */; };
+		8503FD4D266F702E00C8D98C /* AddSignaleringsplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD4C266F702E00C8D98C /* AddSignaleringsplan.swift */; };
+		8503FD4F266F73C900C8D98C /* Plan1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD4E266F73C900C8D98C /* Plan1.swift */; };
+		8503FD54266F77B400C8D98C /* Plan2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD53266F77B400C8D98C /* Plan2.swift */; };
+		8503FD56266F7B1000C8D98C /* Plan3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD55266F7B1000C8D98C /* Plan3.swift */; };
+		8503FD58266F7C2600C8D98C /* Plan4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD57266F7C2600C8D98C /* Plan4.swift */; };
+		8503FD5C266F8DEE00C8D98C /* TextfieldCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD5B266F8DEE00C8D98C /* TextfieldCard.swift */; };
+		8503FD5E266F8E5B00C8D98C /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD5D266F8E5B00C8D98C /* QuestionModel.swift */; };
+		8503FD60266F8EC000C8D98C /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD5F266F8EC000C8D98C /* QuestionData.swift */; };
 		85041DF4264E9EDC00E6F4B8 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85041DF3264E9EDC00E6F4B8 /* ActivitiesView.swift */; };
 		85041DF6264EA3A000E6F4B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85041DF5264EA3A000E6F4B8 /* HomeView.swift */; };
 		85041DF8264EA3AE00E6F4B8 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85041DF7264EA3AE00E6F4B8 /* LogView.swift */; };
@@ -32,6 +42,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8503FD47266F6CE000C8D98C /* MethodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodCard.swift; sourceTree = "<group>"; };
+		8503FD49266F6D6F00C8D98C /* SignaleringsplanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringsplanView.swift; sourceTree = "<group>"; };
+		8503FD4C266F702E00C8D98C /* AddSignaleringsplan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignaleringsplan.swift; sourceTree = "<group>"; };
+		8503FD4E266F73C900C8D98C /* Plan1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan1.swift; sourceTree = "<group>"; };
+		8503FD53266F77B400C8D98C /* Plan2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan2.swift; sourceTree = "<group>"; };
+		8503FD55266F7B1000C8D98C /* Plan3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan3.swift; sourceTree = "<group>"; };
+		8503FD57266F7C2600C8D98C /* Plan4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan4.swift; sourceTree = "<group>"; };
+		8503FD5B266F8DEE00C8D98C /* TextfieldCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldCard.swift; sourceTree = "<group>"; };
+		8503FD5D266F8E5B00C8D98C /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		8503FD5F266F8EC000C8D98C /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		85041DF3264E9EDC00E6F4B8 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		85041DF5264EA3A000E6F4B8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		85041DF7264EA3AE00E6F4B8 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
@@ -69,6 +89,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8503FD4B266F6FD800C8D98C /* Signaleringsplan */ = {
+			isa = PBXGroup;
+			children = (
+				8503FD49266F6D6F00C8D98C /* SignaleringsplanView.swift */,
+				8503FD4C266F702E00C8D98C /* AddSignaleringsplan.swift */,
+				8503FD4E266F73C900C8D98C /* Plan1.swift */,
+				8503FD53266F77B400C8D98C /* Plan2.swift */,
+				8503FD55266F7B1000C8D98C /* Plan3.swift */,
+				8503FD57266F7C2600C8D98C /* Plan4.swift */,
+			);
+			path = Signaleringsplan;
+			sourceTree = "<group>";
+		};
 		85041DF2264E9EC700E6F4B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +122,8 @@
 				8519ECF5265148D6002E7F38 /* CheckinComponent.swift */,
 				85AFBD97265E757000BE80C5 /* FilterCard.swift */,
 				85C2819B266E21CB007F7431 /* LinkCard.swift */,
+				8503FD47266F6CE000C8D98C /* MethodCard.swift */,
+				8503FD5B266F8DEE00C8D98C /* TextfieldCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -115,6 +150,7 @@
 				851C37B8264E965600F05116 /* abiApp.swift */,
 				851C37BA264E965600F05116 /* ContentView.swift */,
 				85041DF2264E9EC700E6F4B8 /* Views */,
+				8503FD4B266F6FD800C8D98C /* Signaleringsplan */,
 				85C281A5266E40F4007F7431 /* Activiteiten Categorieën */,
 				8519ECF226513B42002E7F38 /* Components */,
 				85AFBD91265E722700BE80C5 /* Model */,
@@ -139,6 +175,7 @@
 			children = (
 				85AFBD92265E723B00BE80C5 /* ActivityModel.swift */,
 				85CFAF292666531500BE8902 /* LogModel.swift */,
+				8503FD5D266F8E5B00C8D98C /* QuestionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +185,7 @@
 			children = (
 				85AFBD95265E72F200BE80C5 /* ActivityData.swift */,
 				85CFAF272666520B00BE8902 /* LogData.swift */,
+				8503FD5F266F8EC000C8D98C /* QuestionData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -236,21 +274,31 @@
 				85C281AB266E49F9007F7431 /* CommunicatieActiviteiten.swift in Sources */,
 				85CFAF282666520B00BE8902 /* LogData.swift in Sources */,
 				8519ECF426513C48002E7F38 /* CardComponent.swift in Sources */,
+				8503FD54266F77B400C8D98C /* Plan2.swift in Sources */,
 				8519ECF6265148D6002E7F38 /* CheckinComponent.swift in Sources */,
 				85817B7E265E94A1003F1689 /* ActivityView.swift in Sources */,
+				8503FD4D266F702E00C8D98C /* AddSignaleringsplan.swift in Sources */,
 				85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */,
 				85C281A9266E47C5007F7431 /* AfleidingActiviteiten.swift in Sources */,
+				8503FD58266F7C2600C8D98C /* Plan4.swift in Sources */,
 				85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */,
 				85C281A4266E3E55007F7431 /* MethodsView.swift in Sources */,
 				85AFBD98265E757000BE80C5 /* FilterCard.swift in Sources */,
+				8503FD56266F7B1000C8D98C /* Plan3.swift in Sources */,
 				851C37BB264E965600F05116 /* ContentView.swift in Sources */,
 				85041DF6264EA3A000E6F4B8 /* HomeView.swift in Sources */,
 				85041DF4264E9EDC00E6F4B8 /* ActivitiesView.swift in Sources */,
+				8503FD48266F6CE000C8D98C /* MethodCard.swift in Sources */,
+				8503FD5E266F8E5B00C8D98C /* QuestionModel.swift in Sources */,
+				8503FD4F266F73C900C8D98C /* Plan1.swift in Sources */,
 				85041DF8264EA3AE00E6F4B8 /* LogView.swift in Sources */,
 				851C37B9264E965600F05116 /* abiApp.swift in Sources */,
 				85CFAF2A2666531500BE8902 /* LogModel.swift in Sources */,
 				85C281A0266E2B62007F7431 /* InfoView.swift in Sources */,
 				85C281A7266E4119007F7431 /* AlleenActiviteiten.swift in Sources */,
+				8503FD4A266F6D6F00C8D98C /* SignaleringsplanView.swift in Sources */,
+				8503FD5C266F8DEE00C8D98C /* TextfieldCard.swift in Sources */,
+				8503FD60266F8EC000C8D98C /* QuestionData.swift in Sources */,
 				85C2819C266E21CB007F7431 /* LinkCard.swift in Sources */,
 				85C281A2266E30CA007F7431 /* SamenActiviteiten.swift in Sources */,
 			);
