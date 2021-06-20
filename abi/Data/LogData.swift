@@ -8,12 +8,11 @@
 import SwiftUI
 
 let logData: [Log] = [
-
     Log(
         date: "31 mei 2021",
         activiteit: "Autorit",
         top: "De activiteit had een positieve aanpak. Het was fijn om even uit huis weg te zijn.",
-        tip: "Vul in wat beter kon.",
+        tip: "Iets wat beter kon.",
         opmerking: "-"
     )
 ]

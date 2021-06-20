@@ -57,6 +57,6 @@ struct CardModifier: ViewModifier {
 
 struct CardComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CardComponent(activity: activitiesData[0])
+        CardComponent(activity: activitiesData[1])
     }
 }

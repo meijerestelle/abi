@@ -14,7 +14,7 @@ struct ActivityView: View {
     var activity: Activity
     
     var body: some View {
-        ScrollView {
+        VStack {
             Image(activity.image)
                 .resizable()
                 .scaledToFill()

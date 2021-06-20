@@ -21,12 +21,11 @@ struct Activity: Identifiable {
 class Activities: ObservableObject {
     @Published var allActivities: [Activity] = activitiesData
     @Published var favorites: [Activity] = []
-    var favouriteIds: Set<Int> = [] // <== als je hier een set van Int van maakt, dan kunnen er geen dubbelingen in zitten
+    var favouriteIds: Set<Int> = []
     
     static let standard = Activities()
     private init() {
-        // In de userdefaults staat een lijst (of niet)
-
+        // Checken of er in de UserDefaults een lijst staat onder de noemer "favourites".
         if let values = UserDefaults.standard.array(forKey: "favourites") as? [Int] {
             favouriteIds = Set(values)
             updateFavourites()
@@ -35,40 +34,46 @@ class Activities: ObservableObject {
     }
     
     func setFavorite(isFavourite: Bool, forActivity: Activity) {
+        // Hier wordt een item door de gebruiker gefavorite, of gedefavorite.
         let item = allActivities.first { current in
             current.id == forActivity.id
         }
-        // We hebben een item gevonden  dat door de gebruiker is gefavourite, of is gede-favourite
         
-        // Nu Toevoegen aan ons lijstje, of er uit halen
+        // Toevoegen aan het lijstje met favoriete ID's...
         if isFavourite {
             favouriteIds.insert(item!.id)
-            
         }
+        
+        // Of uit de lijst halen.
         else {
-            // Uit de lijst  halen
             favouriteIds.remove(item!.id)
         }
-        // Het lijstje bewaren
+        
+        // De lijst met favoriete ID's bewaren...
         UserDefaults.standard.setValue(Array(favouriteIds), forKey: "favourites")
         
-        // De array met favourties bijwerken, zodat die klopt met het lijstje van geselecteerde ids
+        // en de lijst met favorieten bijwerken.
         print(favorites.count)
         updateFavourites()
     }
     
+    // Checken of een activiteit in de array met favoriete ID's staat.
     func isFavourited(activity: Activity) -> Bool {
         favouriteIds.contains(activity.id)
     }
     
     // Zoekt om de favouriteIds en zet die in de array favourites
     func updateFavourites () {
+        // Favourites is initieel een lege array.
         favorites = []
+        
         for id in favouriteIds {
-            // Zoek juiste item
+            // Zoekt het juiste item...
             let item = allActivities.first { current in
                 current.id == id
             }
+            
+            // En voegt deze toe aan de array met favoriete activiteiten.
             if let item = item {
                 favorites.append(item)
             }

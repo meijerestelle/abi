@@ -10,10 +10,10 @@
 		8503FD48266F6CE000C8D98C /* MethodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD47266F6CE000C8D98C /* MethodCard.swift */; };
 		8503FD4A266F6D6F00C8D98C /* SignaleringsplanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD49266F6D6F00C8D98C /* SignaleringsplanView.swift */; };
 		8503FD4D266F702E00C8D98C /* AddSignaleringsplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD4C266F702E00C8D98C /* AddSignaleringsplan.swift */; };
-		8503FD4F266F73C900C8D98C /* Plan1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD4E266F73C900C8D98C /* Plan1.swift */; };
-		8503FD54266F77B400C8D98C /* Plan2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD53266F77B400C8D98C /* Plan2.swift */; };
-		8503FD56266F7B1000C8D98C /* Plan3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD55266F7B1000C8D98C /* Plan3.swift */; };
-		8503FD58266F7C2600C8D98C /* Plan4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD57266F7C2600C8D98C /* Plan4.swift */; };
+		8503FD4F266F73C900C8D98C /* SignaleringStap1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD4E266F73C900C8D98C /* SignaleringStap1.swift */; };
+		8503FD54266F77B400C8D98C /* SignaleringStap2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD53266F77B400C8D98C /* SignaleringStap2.swift */; };
+		8503FD56266F7B1000C8D98C /* SignaleringStap3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD55266F7B1000C8D98C /* SignaleringStap3.swift */; };
+		8503FD58266F7C2600C8D98C /* SignaleringStap4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD57266F7C2600C8D98C /* SignaleringStap4.swift */; };
 		8503FD5C266F8DEE00C8D98C /* TextfieldCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD5B266F8DEE00C8D98C /* TextfieldCard.swift */; };
 		8503FD5E266F8E5B00C8D98C /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD5D266F8E5B00C8D98C /* QuestionModel.swift */; };
 		8503FD60266F8EC000C8D98C /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503FD5F266F8EC000C8D98C /* QuestionData.swift */; };
@@ -26,6 +26,10 @@
 		851C37BB264E965600F05116 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851C37BA264E965600F05116 /* ContentView.swift */; };
 		851C37BD264E965800F05116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851C37BC264E965800F05116 /* Assets.xcassets */; };
 		851C37C0264E965800F05116 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851C37BF264E965800F05116 /* Preview Assets.xcassets */; };
+		855AB2C3267F6A8900457836 /* SignaleringStap5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2C2267F6A8900457836 /* SignaleringStap5.swift */; };
+		855AB2C5267F6AC800457836 /* SignaleringStap6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2C4267F6AC800457836 /* SignaleringStap6.swift */; };
+		855AB2C9267F764500457836 /* LogComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2C8267F764500457836 /* LogComponent.swift */; };
+		855AB2CB267F783500457836 /* ActivitiesLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2CA267F783500457836 /* ActivitiesLogView.swift */; };
 		85817B7E265E94A1003F1689 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85817B7D265E94A1003F1689 /* ActivityView.swift */; };
 		85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD92265E723B00BE80C5 /* ActivityModel.swift */; };
 		85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD95265E72F200BE80C5 /* ActivityData.swift */; };
@@ -45,10 +49,10 @@
 		8503FD47266F6CE000C8D98C /* MethodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodCard.swift; sourceTree = "<group>"; };
 		8503FD49266F6D6F00C8D98C /* SignaleringsplanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringsplanView.swift; sourceTree = "<group>"; };
 		8503FD4C266F702E00C8D98C /* AddSignaleringsplan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSignaleringsplan.swift; sourceTree = "<group>"; };
-		8503FD4E266F73C900C8D98C /* Plan1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan1.swift; sourceTree = "<group>"; };
-		8503FD53266F77B400C8D98C /* Plan2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan2.swift; sourceTree = "<group>"; };
-		8503FD55266F7B1000C8D98C /* Plan3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan3.swift; sourceTree = "<group>"; };
-		8503FD57266F7C2600C8D98C /* Plan4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan4.swift; sourceTree = "<group>"; };
+		8503FD4E266F73C900C8D98C /* SignaleringStap1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap1.swift; sourceTree = "<group>"; };
+		8503FD53266F77B400C8D98C /* SignaleringStap2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap2.swift; sourceTree = "<group>"; };
+		8503FD55266F7B1000C8D98C /* SignaleringStap3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap3.swift; sourceTree = "<group>"; };
+		8503FD57266F7C2600C8D98C /* SignaleringStap4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap4.swift; sourceTree = "<group>"; };
 		8503FD5B266F8DEE00C8D98C /* TextfieldCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldCard.swift; sourceTree = "<group>"; };
 		8503FD5D266F8E5B00C8D98C /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		8503FD5F266F8EC000C8D98C /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
@@ -63,6 +67,10 @@
 		851C37BC264E965800F05116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		851C37BF264E965800F05116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		851C37C1264E965800F05116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855AB2C2267F6A8900457836 /* SignaleringStap5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap5.swift; sourceTree = "<group>"; };
+		855AB2C4267F6AC800457836 /* SignaleringStap6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap6.swift; sourceTree = "<group>"; };
+		855AB2C8267F764500457836 /* LogComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogComponent.swift; sourceTree = "<group>"; };
+		855AB2CA267F783500457836 /* ActivitiesLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesLogView.swift; sourceTree = "<group>"; };
 		85817B7D265E94A1003F1689 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		85AFBD92265E723B00BE80C5 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		85AFBD95265E72F200BE80C5 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
@@ -94,10 +102,12 @@
 			children = (
 				8503FD49266F6D6F00C8D98C /* SignaleringsplanView.swift */,
 				8503FD4C266F702E00C8D98C /* AddSignaleringsplan.swift */,
-				8503FD4E266F73C900C8D98C /* Plan1.swift */,
-				8503FD53266F77B400C8D98C /* Plan2.swift */,
-				8503FD55266F7B1000C8D98C /* Plan3.swift */,
-				8503FD57266F7C2600C8D98C /* Plan4.swift */,
+				8503FD4E266F73C900C8D98C /* SignaleringStap1.swift */,
+				8503FD53266F77B400C8D98C /* SignaleringStap2.swift */,
+				8503FD55266F7B1000C8D98C /* SignaleringStap3.swift */,
+				8503FD57266F7C2600C8D98C /* SignaleringStap4.swift */,
+				855AB2C2267F6A8900457836 /* SignaleringStap5.swift */,
+				855AB2C4267F6AC800457836 /* SignaleringStap6.swift */,
 			);
 			path = Signaleringsplan;
 			sourceTree = "<group>";
@@ -106,11 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				85041DF5264EA3A000E6F4B8 /* HomeView.swift */,
+				85C2819F266E2B62007F7431 /* InfoView.swift */,
 				85041DF3264E9EDC00E6F4B8 /* ActivitiesView.swift */,
 				85817B7D265E94A1003F1689 /* ActivityView.swift */,
 				85C281A3266E3E55007F7431 /* MethodsView.swift */,
 				85041DF7264EA3AE00E6F4B8 /* LogView.swift */,
-				85C2819F266E2B62007F7431 /* InfoView.swift */,
+				855AB2CA267F783500457836 /* ActivitiesLogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 				85C2819B266E21CB007F7431 /* LinkCard.swift */,
 				8503FD47266F6CE000C8D98C /* MethodCard.swift */,
 				8503FD5B266F8DEE00C8D98C /* TextfieldCard.swift */,
+				855AB2C8267F764500457836 /* LogComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -271,26 +283,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855AB2CB267F783500457836 /* ActivitiesLogView.swift in Sources */,
 				85C281AB266E49F9007F7431 /* CommunicatieActiviteiten.swift in Sources */,
 				85CFAF282666520B00BE8902 /* LogData.swift in Sources */,
 				8519ECF426513C48002E7F38 /* CardComponent.swift in Sources */,
-				8503FD54266F77B400C8D98C /* Plan2.swift in Sources */,
+				8503FD54266F77B400C8D98C /* SignaleringStap2.swift in Sources */,
 				8519ECF6265148D6002E7F38 /* CheckinComponent.swift in Sources */,
 				85817B7E265E94A1003F1689 /* ActivityView.swift in Sources */,
 				8503FD4D266F702E00C8D98C /* AddSignaleringsplan.swift in Sources */,
 				85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */,
 				85C281A9266E47C5007F7431 /* AfleidingActiviteiten.swift in Sources */,
-				8503FD58266F7C2600C8D98C /* Plan4.swift in Sources */,
+				8503FD58266F7C2600C8D98C /* SignaleringStap4.swift in Sources */,
 				85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */,
 				85C281A4266E3E55007F7431 /* MethodsView.swift in Sources */,
 				85AFBD98265E757000BE80C5 /* FilterCard.swift in Sources */,
-				8503FD56266F7B1000C8D98C /* Plan3.swift in Sources */,
+				8503FD56266F7B1000C8D98C /* SignaleringStap3.swift in Sources */,
+				855AB2C3267F6A8900457836 /* SignaleringStap5.swift in Sources */,
 				851C37BB264E965600F05116 /* ContentView.swift in Sources */,
 				85041DF6264EA3A000E6F4B8 /* HomeView.swift in Sources */,
 				85041DF4264E9EDC00E6F4B8 /* ActivitiesView.swift in Sources */,
+				855AB2C5267F6AC800457836 /* SignaleringStap6.swift in Sources */,
 				8503FD48266F6CE000C8D98C /* MethodCard.swift in Sources */,
 				8503FD5E266F8E5B00C8D98C /* QuestionModel.swift in Sources */,
-				8503FD4F266F73C900C8D98C /* Plan1.swift in Sources */,
+				8503FD4F266F73C900C8D98C /* SignaleringStap1.swift in Sources */,
 				85041DF8264EA3AE00E6F4B8 /* LogView.swift in Sources */,
 				851C37B9264E965600F05116 /* abiApp.swift in Sources */,
 				85CFAF2A2666531500BE8902 /* LogModel.swift in Sources */,
@@ -300,6 +315,7 @@
 				8503FD5C266F8DEE00C8D98C /* TextfieldCard.swift in Sources */,
 				8503FD60266F8EC000C8D98C /* QuestionData.swift in Sources */,
 				85C2819C266E21CB007F7431 /* LinkCard.swift in Sources */,
+				855AB2C9267F764500457836 /* LogComponent.swift in Sources */,
 				85C281A2266E30CA007F7431 /* SamenActiviteiten.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

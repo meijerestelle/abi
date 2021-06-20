@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AddSignaleringsplan: View {
     var body: some View {
-        VStack {
-            NavigationLink(destination: Plan1()) {
+        ScrollView {
+            NavigationLink(destination: SignaleringStap1()) {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Voor jezelf.")
@@ -21,12 +21,6 @@ struct AddSignaleringsplan: View {
                     }
                     
                     Spacer()
-                    
-                    VStack() {
-                        
-                        Spacer()
-                    }
-                    
                 }
                 .frame(maxWidth: .infinity, maxHeight: 100, alignment: .leading)
                 .padding()
@@ -36,7 +30,7 @@ struct AddSignaleringsplan: View {
                 .padding()
             }
             
-            NavigationLink(destination: Plan1()) {
+            NavigationLink(destination: SignaleringStap1()) {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Voor je buddy.")
@@ -47,12 +41,6 @@ struct AddSignaleringsplan: View {
                     }
                     
                     Spacer()
-                    
-                    VStack() {
-                        
-                        Spacer()
-                    }
-                    
                 }
                 .frame(maxWidth: .infinity, maxHeight: 100, alignment: .leading)
                 .padding()
@@ -64,8 +52,7 @@ struct AddSignaleringsplan: View {
             
             Spacer()
         }
-        .navigationTitle("Nieuwe maken")
-        .navigationBarHidden(true)
+        .navigationTitle("Plan toevoegen")
     }
 }
 

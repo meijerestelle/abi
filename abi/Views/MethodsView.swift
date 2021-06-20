@@ -10,6 +10,7 @@ import SwiftUI
 struct MethodsView: View {
     
     @ObservedObject var activities = Activities.standard
+    @State var isRootViewActive: Bool = false
     
     var methodeActiviteiten: [Activity] {
         activities.allActivities.filter { methodeActiviteit in
@@ -19,8 +20,7 @@ struct MethodsView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                
+            VStack {
                 HStack {
                     Text("Dit zijn vormen die je kunt gebruiken om bij te houden hoe het gaat met je buddy.")
                     
@@ -28,22 +28,29 @@ struct MethodsView: View {
                 }
                 .padding([.horizontal, .bottom])
                 
-                NavigationLink(
-                    destination: SignaleringsplanView(),
-                    label: {
+                NavigationLink(destination: SignaleringsplanView(), isActive: $isRootViewActive) {
                         MethodCard(activity: activitiesData[25])
                             .foregroundColor(.black)
-                    })
+                    }
+                .isDetailLink(false)
                 
-//                ForEach(methodeActiviteiten) { item in
-//                    NavigationLink(
-//                        destination: ActivityView(activity: item)) {
-//                        MethodCard(activity: item)
+//                NavigationLink(
+//                    destination: Mindfulness(),
+//                    label: {
+//                        MethodCard(activity: activitiesData[26])
 //                            .foregroundColor(.black)
-//                    }
-//                }
+//                    })
+                
+//                NavigationLink(
+//                    destination: Mindset(),
+//                    label: {
+//                        MethodCard(activity: activitiesData[27])
+//                            .foregroundColor(.black)
+//                    })
+                
+                Spacer()
             }
-            .navigationBarTitle("Methodes")
+            .navigationTitle("Methodes")
         }
     }
 }

@@ -17,11 +17,12 @@ struct FilterCard: View {
             Image(systemName: "\(filterImage)")
                 .padding()
             Text(filterTitle)
+                .lineLimit(2)
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, maxHeight: 60, alignment: .center)
         .padding()
-        .background(Color.accentColor)
+        .background(Color("AccentColor"))
         .modifier(CardModifier())
         .padding(.bottom)
     }

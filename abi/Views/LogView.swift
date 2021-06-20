@@ -15,24 +15,29 @@ struct LogView: View {
                     .padding()
                 
                 HStack {
-                    FilterCard(filterImage: "", filterTitle: "Stoplicht")
+                    FilterCard(filterImage: "", filterTitle: "Buddy mood")
                     
                     Spacer()
                     
-                    FilterCard(filterImage: "", filterTitle: "Activiteiten")
+                    NavigationLink(destination: ActivitiesLogView()) {
+                        FilterCard(filterImage: "", filterTitle: "Activiteiten")
+                    }
                 }
                 .padding()
                 
                 HStack {
                     Image("")
                     
-                    Text("Recente logs")
+                    Text("Recent")
                         .font(.title)
                         .fontWeight(.bold)
                     
                     Spacer()
                 }
                 .padding([.horizontal, .bottom])
+                
+                LogComponent(log: logData[0])
+                
             }
             .navigationBarTitle("Logboek")
         }

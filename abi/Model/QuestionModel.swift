@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct Question {
+struct Question: Identifiable {
+    var id = UUID()
     var question:String
     var explanation:String
+    var phase:String
     @State var answer: String
 }
