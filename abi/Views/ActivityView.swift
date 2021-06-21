@@ -44,6 +44,7 @@ struct ActivityView: View {
                 
                 Button(
                     action: {
+                        // FIXME: - Dit zou nog daadwerkelijk een logboekentry scherm moeten openen, en zo wat aan het logboek moeten toevoegen.
                     print("logboek")
                 }, label: {
                     Text("Voeg toe aan logboek")
