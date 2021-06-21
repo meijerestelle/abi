@@ -11,6 +11,7 @@ struct ActivitiesLogView: View {
     
     @State var activeCategory = ""
     var activities = activitiesData
+    var logEntries = logData
     
     var body: some View {
         ScrollView {
@@ -47,8 +48,11 @@ struct ActivitiesLogView: View {
                     FilterCard(filterImage: "face.smiling.fill", filterTitle: "Afleiding")
                 }
                 
-                Button (action: { activeCategory = "communicatie"}) {
-                    FilterCard(filterImage: "bubble.left.and.bubble.right.fill", filterTitle: "Communicatie")
+                Button (
+                    action: {
+                        activeCategory = "communicatie"
+                        
+                    }) { FilterCard(filterImage: "bubble.left.and.bubble.right.fill", filterTitle: "Communicatie")
                 }
             }
             .padding(.horizontal)
@@ -64,9 +68,15 @@ struct ActivitiesLogView: View {
             }
             .padding([.horizontal, .bottom])
             
-            ForEach(activities) { activity in
-                if activity.tag == activeCategory {
-                    CardComponent(activity: activity)
+            if activeCategory != "" {
+                ForEach(logEntries) { logEntry in
+                    if logEntry.tag == activeCategory {
+                        LogComponent(log: logEntry)
+                    }
+                }
+            } else {
+                ForEach(logEntries) { logEntry in
+                    LogComponent(log: logEntry)
                 }
             }
         }

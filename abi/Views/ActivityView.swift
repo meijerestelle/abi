@@ -18,7 +18,7 @@ struct ActivityView: View {
             Image(activity.image)
                 .resizable()
                 .scaledToFill()
-                .frame(height: 200, alignment: .center)
+                .frame(height: 200, alignment: .topLeading)
                 .ignoresSafeArea()
                 .clipped()
             
@@ -54,7 +54,7 @@ struct ActivityView: View {
                     .background(Color.accentColor)
                     .foregroundColor(.white)
                     .modifier(CardModifier())
-                    .padding(.top, 50)
+                    .padding()
             }
             .padding(.horizontal)
             .frame(idealWidth: .infinity, alignment: .leading)
@@ -85,6 +85,6 @@ struct CheckToggleStyle: ToggleStyle {
 
 struct ActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityView(activity: activitiesData[1])
+        ActivityView(activity: activitiesData[0])
     }
 }

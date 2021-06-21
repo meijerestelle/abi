@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SignaleringStap2: View {
     
-    @State var stressFactors: String = "Voeg hier jouw stressfactoren toe."
+    @State var stressFactors: String = ""
+    @State var dataArray: [String] = []
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,10 +20,19 @@ struct SignaleringStap2: View {
             
             Text("Wat gaf jou de afgelopen tijd stress? \nWelke stressbronnen zorgden ervoor dat je de afgelopen tijd uit balans raakte?")
             
-            TextEditor(text: $stressFactors)
+            TextField("Typ hier iets...", text: $stressFactors)
                 .foregroundColor(.secondary)
-                .background(Color.gray)
                 .lineLimit(5)
+            
+            Button(action: {
+                saveText()
+            }) {
+                Text("Save")
+            }
+            
+            ForEach(dataArray, id: \.self) { data in
+                Text(data)
+            }
             
             Spacer()
             
@@ -46,6 +56,11 @@ struct SignaleringStap2: View {
         }
         .padding()
         .navigationBarTitle("Stress", displayMode: .inline)
+    }
+    
+    func saveText() {
+        dataArray.append(stressFactors)
+        stressFactors = ""
     }
 }
 

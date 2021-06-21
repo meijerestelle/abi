@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ActivitiesView: View {
     
-    @ObservedObject var activities = Activities.standard
+    @ObservedObject var activitiesStandard = Activities.standard
+    
+    var activities = activitiesData
+    @State var activeCategory = ""
+    @State var filterIcon = ""
     
     var body: some View {
         NavigationView {
@@ -26,51 +30,86 @@ struct ActivitiesView: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    NavigationLink(destination: SamenActiviteiten()) {
+                    Button(action: {
+                        activeCategory = "samen"
+                        filterIcon = "person.2.fill"
+                    }) {
                         FilterCard(filterImage: "person.2.fill", filterTitle: "Samen")
                     }
-                    NavigationLink(
-                        destination: AlleenActiviteiten(),
-                        label: {
-                            FilterCard(filterImage: "person.fill", filterTitle: "Alleen")
-                        })
+                    
+                    Button(action: {
+                        activeCategory = "alleen"
+                        filterIcon = "person.fill"
+                    }) {
+                        FilterCard(filterImage: "person.fill", filterTitle: "Alleen")
+                        }
                 }
                 .padding(.horizontal)
 
                 HStack {
-                    NavigationLink(destination: AfleidingActiviteiten()) {
+                    Button(action: {
+                        activeCategory = "afleiding"
+                        filterIcon = "face.smiling.fill"
+                    }) {
                         FilterCard(filterImage: "face.smiling.fill", filterTitle: "Afleiding")
                     }
-                    NavigationLink(destination: CommunicatieActiviteiten()) {
+                    
+                    Button(action: {
+                        activeCategory = "communicatie"
+                        filterIcon = "bubble.left.and.bubble.right.fill"
+                    }) {
                         FilterCard(filterImage: "bubble.left.and.bubble.right.fill", filterTitle: "Communicatie")
                     }
                 }
                 .padding(.horizontal)
                 
-                HStack {
-                    Image(systemName: "heart.fill")
-                    Text("Favorieten")
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                .font(.title2)
-                .padding(.horizontal)
-                
-                if (activities.favorites.isEmpty) {
+                if activeCategory != "" {
                     HStack {
-                        Text("Je hebt nog geen favorieten!")
+                        Image(systemName: "\(filterIcon)")
+                        
+                        Text("Categorie: \(activeCategory)")
+                            .fontWeight(.bold)
+                            .autocapitalization(UITextAutocapitalizationType.words)
                         
                         Spacer()
                     }
-                    .padding([.horizontal])
-                }
-                
-                ForEach(activities.favorites) { item in
-                    NavigationLink(destination: ActivityView(activity: item)) {
-                        CardComponent(activity: item)
+                    .font(.title2)
+                    .padding(.horizontal)
+                    
+                    ForEach(activities) { activity in
+                        if activity.tag == activeCategory {
+                            NavigationLink(destination: ActivityView(activity: activity)) {
+                                CardComponent(activity: activity)
+                            }
+                            .foregroundColor(.black)
+                        }
                     }
-                    .foregroundColor(.black)
-                 }
+                } else {
+                    HStack {
+                        Image(systemName: "heart.fill")
+                        Text("Favorieten")
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
+                    .font(.title2)
+                    .padding(.horizontal)
+                    
+                    ForEach(activitiesStandard.favorites) { item in
+                        NavigationLink(destination: ActivityView(activity: item)) {
+                            CardComponent(activity: item)
+                        }
+                        .foregroundColor(.black)
+                    }
+                    
+                    if (activitiesStandard.favorites.isEmpty) {
+                        HStack {
+                            Text("Je hebt nog geen favorieten!")
+                            
+                            Spacer()
+                        }
+                        .padding([.horizontal])
+                    }
+                }
             }
             .navigationTitle("Activiteiten")
         }

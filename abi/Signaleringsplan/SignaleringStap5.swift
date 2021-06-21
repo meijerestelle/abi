@@ -17,13 +17,11 @@ struct SignaleringStap5: View {
                 if question.phase == "orange" {
                 TextfieldCard(question: question)
                 }
-                
-                Spacer()
             }
             
+            Spacer()
+            
             HStack {
-                Spacer()
-                
                 NavigationLink(
                     destination: SignaleringStap6(),
                     label: {
@@ -38,10 +36,9 @@ struct SignaleringStap5: View {
                             .cornerRadius(15)
                     })
             }
-
         }
         .padding()
-        .navigationTitle("Fase groen")
+        .navigationTitle("Fase oranje")
     }
 }
 

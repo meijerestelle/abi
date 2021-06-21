@@ -17,16 +17,16 @@ struct LogView: View {
                 Text("Door het loggen van de mood van je buddy of het loggen van de activiteiten, kun je later terugkijken wat wel of niet goed ging bij je buddy op basis van je eigen ervaringen. ")
                     .padding()
                 
-                HStack {
-                    FilterCard(filterImage: "", filterTitle: "Buddy mood")
-                    
-                    Spacer()
-                    
-                    NavigationLink(destination: ActivitiesLogView()) {
-                        FilterCard(filterImage: "", filterTitle: "Activiteiten")
-                    }
-                }
-                .padding()
+//                HStack {
+//                    FilterCard(filterImage: "", filterTitle: "Buddy mood")
+//
+//                    Spacer()
+//
+//                    NavigationLink(destination: ActivitiesLogView()) {
+//                        FilterCard(filterImage: "", filterTitle: "Activiteiten")
+//                    }
+//                }
+//                .padding()
                 
                 HStack {
                     Image("")

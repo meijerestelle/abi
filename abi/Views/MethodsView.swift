@@ -11,7 +11,7 @@ struct MethodsView: View {
     
     @ObservedObject var activities = Activities.standard
     
-    var methodeActiviteiten: [Activity] {
+    var methods: [Activity] {
         activities.allActivities.filter { methodeActiviteit in
             return methodeActiviteit.tag == "methodes"
         }

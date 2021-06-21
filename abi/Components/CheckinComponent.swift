@@ -17,6 +17,7 @@ struct CheckinComponent: View {
             HStack {
                 Spacer()
                 
+                // FIXME: - Zorgen dat deze cirkels een waarde meegeven aan een logentry
                 Circle()
                     .foregroundColor(.green)
                     .frame(width: 60.0, height: 60.0)
@@ -41,7 +42,10 @@ struct CheckinComponent: View {
             HStack {
                 Spacer()
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    // TODO: - Zorgen dat deze button daadwerkelijk iets opslaat.
+                    print("Opslaan in logboek")
+                }, label: {
                     Text("Opslaan in logboek")
                 })
                 .padding()

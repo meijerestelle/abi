@@ -25,11 +25,21 @@ struct SignaleringStap6: View {
                 Spacer()
                 
                 // TODO: - Button fixen voor het teruggaan naar de Root van deze NavigationLink slinger.
+                Button(
+                    action: {
+                        print("Submit")
+                    }, label: {
+                    Text("Signaleringsplan opslaan")
+                        .padding()
+                        .frame(minWidth: 150, maxWidth: .infinity)
+                        .foregroundColor(.white)
+                        .background(Color("Oranje"))
+                        .cornerRadius(15)
+                })
             }
-
         }
         .padding()
-        .navigationTitle("Fase groen")
+        .navigationTitle("Fase rood")
     }
 }
 

@@ -38,7 +38,7 @@ struct SignaleringStap1: View {
                     .padding()
             }
         }
-        .padding()
+        .padding(.horizontal)
         .navigationBarTitle("Stress", displayMode: .inline)
     }
 }

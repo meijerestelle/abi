@@ -19,7 +19,6 @@ struct HomeView: View {
                 HStack(alignment: .top) {
                     Image(systemName: "questionmark.circle")
                         
-                    
                     Text("Heb jij je buddy al gecheckt vandaag?")
                         .fontWeight(.bold)
                     
