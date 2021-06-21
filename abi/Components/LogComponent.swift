@@ -17,7 +17,7 @@ struct LogComponent: View {
                 Text(log.date)
                     .font(.subheadline)
             
-                Text(log.activiteit)
+                Text(log.activity)
                     .font(.title3)
                     .fontWeight(.bold)
                 

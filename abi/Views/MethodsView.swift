@@ -10,7 +10,6 @@ import SwiftUI
 struct MethodsView: View {
     
     @ObservedObject var activities = Activities.standard
-    @State var isRootViewActive: Bool = false
     
     var methodeActiviteiten: [Activity] {
         activities.allActivities.filter { methodeActiviteit in
@@ -28,7 +27,7 @@ struct MethodsView: View {
                 }
                 .padding([.horizontal, .bottom])
                 
-                NavigationLink(destination: SignaleringsplanView(), isActive: $isRootViewActive) {
+                NavigationLink(destination: SignaleringsplanView()) {
                         MethodCard(activity: activitiesData[25])
                             .foregroundColor(.black)
                     }

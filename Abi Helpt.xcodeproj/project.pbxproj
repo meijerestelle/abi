@@ -30,6 +30,7 @@
 		855AB2C5267F6AC800457836 /* SignaleringStap6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2C4267F6AC800457836 /* SignaleringStap6.swift */; };
 		855AB2C9267F764500457836 /* LogComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2C8267F764500457836 /* LogComponent.swift */; };
 		855AB2CB267F783500457836 /* ActivitiesLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AB2CA267F783500457836 /* ActivitiesLogView.swift */; };
+		85691B6326809D96000AEDEB /* LogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85691B6226809D96000AEDEB /* LogDetailView.swift */; };
 		85817B7E265E94A1003F1689 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85817B7D265E94A1003F1689 /* ActivityView.swift */; };
 		85AFBD93265E723B00BE80C5 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD92265E723B00BE80C5 /* ActivityModel.swift */; };
 		85AFBD96265E72F200BE80C5 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFBD95265E72F200BE80C5 /* ActivityData.swift */; };
@@ -61,7 +62,7 @@
 		85041DF7264EA3AE00E6F4B8 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		8519ECF326513C48002E7F38 /* CardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardComponent.swift; sourceTree = "<group>"; };
 		8519ECF5265148D6002E7F38 /* CheckinComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinComponent.swift; sourceTree = "<group>"; };
-		851C37B5264E965600F05116 /* abi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = abi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851C37B5264E965600F05116 /* Abi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		851C37B8264E965600F05116 /* abiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abiApp.swift; sourceTree = "<group>"; };
 		851C37BA264E965600F05116 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		851C37BC264E965800F05116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		855AB2C4267F6AC800457836 /* SignaleringStap6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaleringStap6.swift; sourceTree = "<group>"; };
 		855AB2C8267F764500457836 /* LogComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogComponent.swift; sourceTree = "<group>"; };
 		855AB2CA267F783500457836 /* ActivitiesLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesLogView.swift; sourceTree = "<group>"; };
+		85691B6226809D96000AEDEB /* LogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailView.swift; sourceTree = "<group>"; };
 		85817B7D265E94A1003F1689 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		85AFBD92265E723B00BE80C5 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		85AFBD95265E72F200BE80C5 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				85817B7D265E94A1003F1689 /* ActivityView.swift */,
 				85C281A3266E3E55007F7431 /* MethodsView.swift */,
 				85041DF7264EA3AE00E6F4B8 /* LogView.swift */,
+				85691B6226809D96000AEDEB /* LogDetailView.swift */,
 				855AB2CA267F783500457836 /* ActivitiesLogView.swift */,
 			);
 			path = Views;
@@ -151,7 +154,7 @@
 		851C37B6264E965600F05116 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				851C37B5264E965600F05116 /* abi.app */,
+				851C37B5264E965600F05116 /* Abi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,7 +234,7 @@
 			);
 			name = abi;
 			productName = abi;
-			productReference = 851C37B5264E965600F05116 /* abi.app */;
+			productReference = 851C37B5264E965600F05116 /* Abi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 851C37B0264E965600F05116 /* Build configuration list for PBXProject "abi" */;
+			buildConfigurationList = 851C37B0264E965600F05116 /* Build configuration list for PBXProject "Abi Helpt" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -317,6 +320,7 @@
 				85C2819C266E21CB007F7431 /* LinkCard.swift in Sources */,
 				855AB2C9267F764500457836 /* LogComponent.swift in Sources */,
 				85C281A2266E30CA007F7431 /* SamenActiviteiten.swift in Sources */,
+				85691B6326809D96000AEDEB /* LogDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.estellemeijer.abi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Abi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.estellemeijer.abi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Abi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -486,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		851C37B0264E965600F05116 /* Build configuration list for PBXProject "abi" */ = {
+		851C37B0264E965600F05116 /* Build configuration list for PBXProject "Abi Helpt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				851C37C2264E965800F05116 /* Debug */,

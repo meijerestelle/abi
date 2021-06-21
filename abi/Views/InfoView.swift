@@ -18,7 +18,7 @@ struct InfoView: View {
             
             Spacer()
             
-            Link("Noodknop", destination: URL(string: "https://113.nl")!)
+            Link("Noodknop (113 site)", destination: URL(string: "https://113.nl")!)
                 .frame(
                     minWidth: 200, maxWidth: .infinity)
                 .padding()

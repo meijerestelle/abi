@@ -72,7 +72,7 @@ struct ActivitiesView: View {
                     .foregroundColor(.black)
                  }
             }
-            .navigationBarTitle("Activiteiten", displayMode: .automatic)
+            .navigationTitle("Activiteiten")
         }
     }
 }

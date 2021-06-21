@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SignaleringsplanView: View {
-
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -70,6 +69,7 @@ struct SignaleringsplanView: View {
                     .foregroundColor(.white)
                     .modifier(CardModifier())
             }
+            .navigationTitle("Signaleringsplan")
         }
         .padding()
     }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LogView: View {
+    
+    var logEntries = logData
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -36,8 +39,11 @@ struct LogView: View {
                 }
                 .padding([.horizontal, .bottom])
                 
-                LogComponent(log: logData[0])
-                
+                ForEach(logEntries) { logEntry in
+                    NavigationLink(destination: LogDetailView(logEntry: logEntry)) { LogComponent(log: logEntry)
+                        .foregroundColor(.black)
+                    }
+                }
             }
             .navigationBarTitle("Logboek")
         }

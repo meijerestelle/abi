@@ -45,25 +45,29 @@ struct HomeView: View {
                     .padding([.top, .leading, .trailing])
                     
                     NavigationLink (
-                        destination: ActivitiesView(),
+                        destination: ActivitiesView()
+                            .navigationBarTitleDisplayMode(.inline),
                         label: {
                             LinkCard(linkName: "Activiteiten", linkDescription: "Hier staan verschillende activiteiten die je samen met je buddy kunt gaan doen.", linkImage: "Activiteiten")
                         })
                         .foregroundColor(.black)
+                    // FIXME: - Nog zorgen dat je hier wel kan terugnavigeren, zonder hoge navbar.
+                    
                     
                     NavigationLink (
-                        destination: MethodsView(),
+                        destination: MethodsView()
+                            .navigationBarTitleDisplayMode(.inline),
                         label: {
                             LinkCard(linkName: "Methodes", linkDescription: "Hier staan methoden die bevorderend kunnen werken om actief aan de slag te gaan met depressie.", linkImage: "Methodes")
                         })
                         .foregroundColor(.black)
+                    // FIXME: - Nog zorgen dat je hier wel kan terugnavigeren, zonder hoge navbar.
                     
-                    Text("113")
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity)
+                    Link("113 site", destination: URL(string: "https://www.113.nl")!)
                         .padding()
+                        .frame(minWidth: 150, maxWidth: .infinity)
                         .background(Color.red)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.white)
                         .modifier(CardModifier())
                         .padding()
                 }

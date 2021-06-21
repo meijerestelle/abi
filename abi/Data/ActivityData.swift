@@ -250,7 +250,7 @@ let activitiesData: [Activity] = [
         tag: "methodes",
         image: "",
         title: "Signaleringsplan",
-        headline: "Dit zijn werkvormen die je kunt gebruiken om bij te houden hoe het gaat met je buddy.",
+        headline: "Een signaleringsplan is een overzichtelijke manier om in te zien hoe je je buddy kan helpen in elke fase van depressie.",
         description: "Deze methode kan je alleen of samen met iemand met depressie doen. Het doel is om via een vooraf opgesteld plan snel te signaleren of het iets minder gaat. Dit kan ook zeker voor jezelf zijn, zodat je weet dat je het even wat rustiger aan moet gaan doen."
     ),
     
